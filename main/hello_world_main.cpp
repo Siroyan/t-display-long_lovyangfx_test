@@ -1,9 +1,3 @@
-/*
- * SPDX-FileCopyrightText: 2010-2022 Espressif Systems (Shanghai) CO LTD
- *
- * SPDX-License-Identifier: CC0-1.0
- */
-
 #include <stdio.h>
 #include <inttypes.h>
 #include "sdkconfig.h"
@@ -13,7 +7,13 @@
 #include "esp_flash.h"
 #include "esp_system.h"
 
-void app_main(void)
+#define LGFX_AUTODETECT
+#define LGFX_TTGO_TDISPLAY
+#include <LovyanGFX.hpp>
+#include <LGFX_AUTODETECT.hpp>
+static LGFX lcd;
+
+extern "C" void app_main(void)
 {
     printf("Hello world!\n");
 
