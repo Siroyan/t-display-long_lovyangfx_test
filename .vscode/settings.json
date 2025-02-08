@@ -9,6 +9,7 @@
     "idf.flashType": "UART",
     "files.associations": {
         "task.h": "c",
-        "cstdint": "cpp"
+        "cstdint": "cpp",
+        "random": "cpp"
     }
 }
